@@ -1,0 +1,264 @@
+@media (min-width: 1400px)
+	
+
+@media (max-width: 1199px)
+
+	.headnav
+		&__btn
+			padding: 0 15px
+
+	.referals
+		&__referal
+			&:nth-of-type(2)
+				&::before
+					width: 150px
+					height: 72px
+					left: -150px
+					top: -40px
+					background-size: 150px
+				&::after
+					width: 150px
+					height: 72px
+					left: -150px
+					top: 90px
+					background-size: 150px
+			&:nth-of-type(4)
+				&::before
+					width: 150px
+					height: 72px
+					left: -150px
+					top: -40px
+					background-size: 150px
+
+	.sidebar
+		max-height: 0
+		margin-bottom: 35px
+		margin-right: 0
+		&.active
+			max-height: 5000px
+		&::after
+			content: none
+		.nav-link
+			&:nth-of-type(2)
+				margin-left: 0
+			&:nth-of-type(3)
+				margin-left: 0
+			&:nth-of-type(4)
+				margin-left: 0
+			&:nth-of-type(5)
+				margin-left: 0
+			&:nth-of-type(6)
+				margin-left: 0
+			&:nth-of-type(7)
+				margin-left: 0
+			&:nth-of-type(8)
+				margin-left: 0
+
+@media (max-width: 991px)
+
+	.headerpage
+		&__headnav 
+			.dropdown
+				&__inner
+					background-color: transparent
+					padding-top: 0
+					padding-bottom: 0
+		.topmnu
+			padding-top: 90px
+
+	.dropdown
+		width: 100%
+		&__inner
+			padding-top: 0
+			background: transparent
+		&__item
+			padding-right: 30px
+			a
+				padding-left: 0
+
+	.topmnu
+		padding-top: 150px
+		&__dropdown
+			z-index: 1
+			pointer-events: auto
+			opacity: 1
+		&__item
+			text-align: center
+			padding-right: 30px
+			float: none
+			display: block
+			a
+				display: block
+				line-height: 3em
+				font-weight: 500
+			&:not(:last-child)
+				margin: 0
+			&_dropdown
+				padding-right: 0
+				&>a
+					display: none
+				&::before
+					content: none
+				&:hover
+					&::before
+						content: none
+
+	.headnav
+		&__topmnu
+			margin-top: 0
+			position: fixed
+			z-index: 100
+			height: 100%
+			width: 350px
+			max-width: 100%
+			background: rgba(0,0,0,.85)
+			right: -350px
+			top: 0
+			transition: 0.2s linear
+		&__btns
+			&.menu
+				position: fixed
+				z-index: 101
+				margin-left: 169px
+
+	html.flexbox
+		.topmnu
+			flex-direction: column
+			justify-content: start
+			&__item
+				
+
+	html.menu
+		.topmnu
+			right: 0
+			transition: 0.2s linear
+
+	
+
+	.referals
+		&__referal
+			&:nth-of-type(2)
+				&::before
+					content: none
+				&::after
+					content: none
+			&:nth-of-type(4)
+				&::before
+					content: none
+
+@media (max-width: 767px)
+	
+	.headnav
+		&__btns
+			&.menu
+				margin-left: 79px
+
+	.footmiddle
+		&__right
+			text-align: left
+		.soc-icon
+			margin-bottom: 10px
+
+	.card
+		&-left, &-right
+			width: 100%
+		&-left
+			float: none
+		&-right
+			float: none
+			text-align: left
+
+@media (max-width: 575px)
+
+	html.flexbox 
+		.header
+			&__headcontent
+				margin: 0 auto
+			&__headnav
+				margin: 0
+		.advantage
+			flex-direction: column
+		.notify
+			flex-direction: column
+			&__btn
+				margin-top: 10px
+
+	.logo
+		margin: 30px auto
+
+	html.menu
+		.logo
+			margin: 69px auto 30px
+
+	.headnav
+		&__btns
+			margin-top: 0
+			&.menu
+				margin-left: 0
+				right: 15px
+
+	.headcontent
+		&__btns
+			margin-top: 40px
+		&__btn
+			display: block
+			margin: 10px 0
+
+	.header
+		padding-bottom: 40px
+		min-height: 700px
+
+	.advantage
+		text-align: center
+		&__icon
+			float: none
+			margin-bottom: 30px
+		&__right
+			width: 100%
+			padding-left: 0
+
+	.payments
+		&__table
+			td, th
+				padding-left: 0
+				padding-right: 0
+
+	.referal
+		&__icon
+			float: none
+			margin: 0 auto 30px
+		&__right
+			width: 100%
+			padding-left: 0
+			text-align: center
+
+	.topmnu
+		&__item
+			text-align: right
+
+	.mission
+		&__content
+			padding: 25px 0
+			background: transparent
+
+	.info
+		padding-left: 0
+		&__thumb
+			display: none
+
+	.card
+		&-body
+			padding: 20px
+
+	.invest
+		&__title
+			display: block
+			width: 100%
+			padding: 15px 0 15px 110px
+			&::after
+				content: none
+
+@media (max-width: 380px)
+
+	.header
+		min-height: 750px

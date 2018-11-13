@@ -1,0 +1,495 @@
+$blue: #11478f
+$red: #ff2a2e
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6, 
+p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin-top: 0
+	margin-right: 0
+	margin-bottom: 0
+	margin-left: 0
+	padding-top: 0
+	padding-right: 0
+	padding-bottom: 0
+	padding-left: 0
+
+html *
+	margin-top: 0
+	margin-right: 0
+	margin-bottom: 0
+	margin-left: 0
+	padding-top: 0
+	padding-right: 0
+	padding-bottom: 0
+	padding-left: 0
+
+html.js .loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+	.loader_inner
+		background-image: url("../img/preloader.gif")
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-color: #fff
+		height: 60px
+		width: 60px
+		margin-top: -30px
+		margin-left: -30px
+		left: 50%
+		top: 50%
+		position: absolute
+
+body
+	font-family: "Open Sans"
+	font-weight: 500
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.6
+	-webkit-font-smoothing: antialiased
+
+html, body
+	overflow-x: hidden
+	min-width: 320px
+
+a
+	text-decoration: underline
+	color: $blue
+	&:hover, &:focus, &:active
+		text-decoration: none
+		outline: none
+		color: $blue
+
+p
+	font-size: .777777em
+	&+&
+		margin-top: 25px
+
+.h2
+	font-weight: 700
+	font-size: 1.333333em
+	text-transform: uppercase
+
+.btn
+	text-decoration: none
+	display: inline-block
+	border-radius: 20px
+	color: #fff
+	font-size: 0.777777em
+	padding: 0 40px
+	line-height: 2.857142em
+	&:hover, &:active, &:focus, &:active:focus, &:not(:disabled):not(.disabled):active:focus
+		text-decoration: none
+		box-shadow: none
+		color: #fff
+	&-lg
+		padding: 0 60px
+		line-height: 60px
+		font-size: .888888em
+		border-radius: 30px
+	&-sm
+		padding: 0 20px
+		line-height: 40px
+	&-primary
+		background-color: $blue
+		border: 1px solid $blue
+	&-transparent
+		background-color: transparent
+		color: $blue
+		&:hover
+			background-color: transparent
+			color: $blue
+	&-danger
+		background: #ff2830
+		background: -moz-linear-gradient(left, #ff2830 0%, #fe510d 100%)
+		background: -webkit-linear-gradient(left, #ff2830 0%,#fe510d 100%)
+		background: linear-gradient(to right, #ff2830 0%,#fe510d 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2830', endColorstr='#fe510d',GradientType=1 )
+		border: 1px solid #ff2830
+		&:hover, &:active, &:focus, &:active:focus, &:not(:disabled):not(.disabled):active:focus
+			border: 1px solid #ff2830
+	&-outline
+		&-primary
+			background: transparent
+			border: 1px solid $blue
+			color: $blue
+			&:hover, &:active, &:focus, &:active:focus, &:not(:disabled):not(.disabled):active:focus
+				background: transparent
+				color: $blue
+		&-light
+			background: transparent
+			border: 1px solid #fff
+			color: #fff
+			&:hover, &:active, &:focus, &:active:focus, &:not(:disabled):not(.disabled):active:focus
+				background: transparent
+				color: #fff
+			
+.topmnu
+	list-style-type: none
+	overflow: visible
+	&__dropdown
+		padding-top: 10px
+		position: absolute
+		right: 0
+		top: -10px
+		z-index: -1
+		pointer-events: none
+		opacity: 0
+	&__item
+		float: left
+		&:not(:last-child)
+			margin: 0 40px 0 0
+		&_dropdown
+			padding-right: 32px
+			position: relative
+			&::before
+				content: "\f107"
+				font: normal normal normal 14px/1 FontAwesome
+				position: absolute
+				right: 0
+				top: 0
+				width: 32px
+				height: 100%
+				line-height: 2em
+				text-align: center
+				z-index: 101
+				transiyion: 0.2s linear
+				color: #fff
+			&:hover
+				&::before
+					content: "\f104"
+					transiyion: 0.2s linear
+				&>a
+					position: relative
+					z-index: 101
+				&>.topmnu__dropdown
+					z-index: 100
+					pointer-events: auto
+					opacity: 1
+		a
+			color: #fff
+			font-weight: 700
+			text-transform: uppercase
+			font-size: 0.777777em
+			transition: 0.1s ease
+			text-decoration: none
+			&:hover, &:active, &:focus
+				color: $red
+				transition: 0.1s ease
+
+.headnav
+	&__topmnu
+		margin-top: 19px
+	&__btns
+		margin-top: 13px
+		float: right
+	&__btn
+		margin: 0 3px
+		text-transform: uppercase
+		font-weight: 700
+
+.headcontent
+	text-align: center
+	&__h1
+		text-transform: uppercase
+		margin-bottom: 30px
+	&__btns
+		margin-top: 60px
+	&__btn
+		margin: 0 3px
+	&__p
+		font-size: 0.888888em
+		font-weight: 500
+
+.headbottom
+	&__down
+		display: block
+		width: 45px
+		height: 45px
+		margin: 0 auto
+		background-image: url('../img/down-arrow.png')
+		background-size: 100%
+		background-position: center
+		background-repeat: no-repeat
+
+.dropdown
+	list-style-type: none
+	width: calc(100% + 15px)
+	&__inner
+		background: rgba(0,0,0,.4)
+		padding-top: 40px
+	&__item
+		display: block
+		a
+			padding-left: 15px
+			display: block
+			line-height: 3em
+			font-weight: 500
+	
+.header
+	height: 100vh
+	max-height: 1000px
+	min-height: 800px
+	background-image: url('../img/header-bg.jpg')
+	background-size: cover
+	background-position: center center
+	padding-top: 45px
+	color: #fff
+	&__headcontent
+		margin: 200px 0 0 0
+
+.headerpage
+	&__headnav
+		background-color: $blue
+		padding: 20px 0
+		.dropdown__inner
+			background-color: $blue
+			padding-top: 70px
+			padding-bottom: 10px
+
+.section
+	padding: 80px 0 90px
+	.h2
+		text-align: center
+		margin-bottom: 75px
+	&_blue
+		background-color: $blue
+		padding: 50px 0 65px
+		color: #fff
+
+.wrapper__page
+	.h2
+		font-weight: 500
+		font-size: 2.333333em
+		text-transform: none
+		margin-bottom: 50px
+
+.breadcrumbs
+	padding: 10px 0 40px
+	&+.section_white
+		padding-top: 20px
+
+.crumb
+	margin-top: 10px
+	position: relative
+	display: inline-block
+	padding: 0 20px
+	border-radius: 2px
+	color: #fff
+	line-height: 28px
+	font-size: 0.777777em
+	text-decoration: none
+	background: #ff2830
+	background: -moz-linear-gradient(left, #ff2830 0%, #fe510d 100%)
+	background: -webkit-linear-gradient(left, #ff2830 0%,#fe510d 100%)
+	background: linear-gradient(to right, #ff2830 0%,#fe510d 100%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2830', endColorstr='#fe510d',GradientType=1 )
+	&:hover, &:active, &:focus
+		color: #fff
+		text-decoration: none
+	&::after
+		content: ''
+		position: absolute
+		width: 0
+		height: 0
+		right: -27px
+		top: 0
+		border: 14px solid #fe510d
+		border-top-color: transparent
+		border-right-color: transparent
+		border-bottom-color: transparent
+	&__disabled
+		background: #dfecfc
+		&::after
+			border-left-color: #dfecfc
+	&:not(:last-child)
+		margin-right: 15px
+
+.table td, .table th
+	border: none
+	font-size: 0.777777em
+
+.form-group
+	margin-bottom: 30px
+
+.select
+	&-wrapper
+		position: relative
+		border-radius: 3px
+		border: 1px solid #d8d8d8
+		background: #fff
+		select
+			font-size: 0.888888em
+			cursor: pointer
+			position: relative
+			left: 1px
+			width: 100%
+			height: 40px
+			padding: 0 20px 0 7px
+			background: transparent
+			border: 0
+			appearance: none
+			-webkit-appearance: none
+			-moz-appearance: none
+			&::-ms-expand
+				display: none
+	&-arrow
+		position: absolute
+		pointer-events: none
+		right: 4px
+		bottom: 5px
+		border: 8px solid
+		border-color: white white #404040 white
+		border-right: 0
+
+.label
+	font-size: 0.888888em
+
+.input-group
+	height: 40px
+	padding: 0 7px
+	background: #fff
+	border: 1px solid #d8d8d8
+	border-radius: 2px
+
+input[type=checkbox]
+	display: none
+	&+.label
+		padding-left: 60px
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			height: 35px
+			width: 35px
+			left: 0
+			top: 5px
+			border: 1px solid #d8d8d8
+			border-radius: 2px
+			cursor: pointer
+			z-index: 1
+	&:checked
+		&+.label
+			&::after
+				content: ''
+				position: absolute
+				height: 15px
+				width: 15px
+				left: 10px
+				top: 15px
+				border-radius: 2px
+				cursor: pointer
+				background: $blue
+				z-index: 2
+
+.slick
+	&-prev, &-next
+		background-color: $red
+		border-radius: 50%
+		width: 50px
+		height: 50px
+		font-size: 50px
+		&::before
+			font-size: 50px
+			width: 50px
+			height: 50px
+			display: block
+			color: #fff
+		&:hover, &:active, &:focus
+			color: transparent
+			outline: none
+			background-color: $red
+	&-prev
+		left: -70px
+		&::before
+			content: "\f104"
+			font-family: 'FontAwesome'
+			left: -3px
+			position: relative
+			top: -2px
+	&-next
+		right: -70px
+		&::before
+			content: "\f105"
+			font-family: 'FontAwesome'
+			left: 3px
+			position: relative
+			top: -2px
+	&-slide 
+		img
+			display: block
+			max-width: 100%
+	&-dots
+		bottom: -50px
+
+.soc-icon
+	display: inline-block
+	width: 25px
+	height: 25px
+	border: 1px solid #fff
+	border-radius: 50%
+	text-align: center
+	color: #fff
+	&:hover, &:active, &:focus
+		color: #fff
+
+.button_kupiapp
+	display: inline-block
+	padding: 0 15px
+	color: #fff
+	font-size: 0.888888em
+	position: relative
+	background-color: #5181b8
+	line-height: 30px
+	left: 37px
+	border-radius: 3px
+	text-decoration: none
+	&::before
+		content: ''
+		position: absolute
+		left: -28px
+		top: 0
+		border: 15px solid #5181b8
+		border-top-color: transparent
+		border-bottom-color: transparent
+		border-left-color: transparent
+	&::after
+		content: "\f189"
+		font-family: 'FontAwesome'
+		text-align: center
+		font-size: 1.5em
+		line-height: 42px
+		position: absolute
+		width: 45px
+		height: 45px
+		left: -75px
+		top: -7px
+		background-color: #4a76a8
+		color: #fff
+		border-radius: 50%
+	&:hover, &:active, &:focus
+		color: #fff
+		text-decoration: none
+		outline: none
+		background-color: #5788c1
+		&::before
+			border-right-color: #5788c1

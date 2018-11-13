@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Заголовок</title>
+	<meta name="description" content="">
+
+	<link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="./img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./img/favicon/apple-touch-icon-114x114.png">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="./libs/bootstrap-4.1.3-dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./libs/fa/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./libs/jqueryui/jquery-ui.min.css">
+
+	<link rel="stylesheet" href="./libs/slick/slick.css">
+	<link rel="stylesheet" href="./libs/slick/slick-theme.css">
+
+	<link rel="stylesheet" href="./css/head.css">
+	<link rel="stylesheet" href="./css/fonts.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/media.css">
+
+	<script src="./libs/modernizr/modernizr.js"></script>
+
+</head>
+
+<body>
+
+	<div class="wrapper wrapper__page">
+
+		<header class="headerpage">
+
+			<div class="headnav headerpage__headnav">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 order-2 col-sm-6 order-sm-1 col-lg-4 col-xl-3">
+							<a href="#">
+								<img src="./img/logo-lg.png" alt="" class="logo">
+							</a>
+						</div>
+
+						<div class="col-12 order-1 col-sm-6 order-sm-2 col-lg-8 col-xl-9">
+							<nav class="topmnu headnav__topmnu clearfix">
+								<li class="topmnu__item">
+									<a href="#">Главная</a>
+								</li>
+								<li class="topmnu__item">
+									<a href="#">Помощь</a>
+								</li>
+								<li class="topmnu__item topmnu__item_dropdown">
+									<a href="#">Варианты инвестиций</a>
+									<nav class="dropdown topmnu__dropdown">
+										<ul class="dropdown__inner">
+											<li class="dropdown__item">
+												<a href="#">Начальный</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#">Средний</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#">Продвинутый</a>
+											</li>
+											<li class="dropdown__item">
+												<a href="#">Профессиональный</a>
+											</li>
+										</ul>
+									</nav>
+								</li>
+							</nav>
+							<div class="headnav__btns d-inline-block">
+								<a href="#" class="btn btn-outline-light headnav__btn">
+									<span class="d-none d-xl-inline">Вход</span>
+									<span class="d-xl-none"><i class="fa fa-sign-in"></i></span>
+								</a>
+								<a href="#" class="btn btn-danger headnav__btn">
+									<span class="d-none d-xl-inline">Регистрация</span>
+									<span class="d-xl-none"><i class="fa fa-pencil-square-o"></i></span>
+								</a>
+								<buttnon id="toggle-btn" class="btn btn-outline-light headnav__btn headnav__toggle d-lg-none">
+									<i class="fa fa-bars"></i>
+								</buttnon>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<section class="breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<a href="#" class="crumb breadcrumbs__crumb">Главная</a>
+						<a class="crumb crumb__disabled breadcrumbs__crumb">Регистрация</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<section class="section section_white">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<h2 class="h2">
+							Регистрация
+						</h2>
+					</div>
+					<div class="col-12 col-lg-8 offset-lg-2">
+						<div class="card">
+							<div class="card-header">
+								Регистрация <span class="d-none d-sm-inline">аккаунта</span>
+							</div>
+							<div class="card-body">
+								<form action="" method="POST" class="form">
+									<div class="row">
+										<div class="col-12 col-md-6">
+											<div class="form-group">
+												<label for="name" class="label">Ваше имя</label>
+												<input id="name" class="input-group" type="text">
+											</div>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="form-group">
+												<label for="email" class="label">E-mail адресс</label>
+												<input id="email" class="input-group" type="text">
+											</div>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="form-group">
+												<label for="pass" class="label">Пароль</label>
+												<input id="pass" class="input-group" type="password">
+											</div>
+										</div>
+										<div class="col-12 col-md-6">
+											<div class="form-group">
+												<label for="pass2" class="label">Повторите пароль</label>
+												<input id="pass2" class="input-group" type="password">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<input id="terms" type="checkbox" name="terms">
+										<label for="terms" class="label">
+											Я соглашаюсь создать личный кабинет и принимаю условия 
+											<a href="#">
+												Пользовательского соглашения об условиях и порядке использования сайта www.cashlion.ru
+											</a>
+										</label>
+									</div>
+									<div class="form-group">
+										<input id="terms2" type="checkbox" name="terms2">
+										<label for="terms2" class="label">
+											Я даю своё согласие сайту "КЭШЛАЙОН" на обработку моей персональной информации на условиях, 
+											определённых
+											<a href="#">
+												Политикой сайта "КЭШЛАЙОН" в отношении обработки персональных данных
+											</a>
+										</label>
+									</div>
+									<div class="form-group">
+										<a href="#" class="btn btn-danger btn-block btn-lg">
+											Зарегистрировать аккаунт
+										</a>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<footer class="footer">
+		<div class="container">
+
+			<div class="foottop footer__foottop">
+				<div class="row">	
+					<div class="col-sm-6 col-xl-3">
+						<div class="foottop__title">
+							Навигация
+						</div>
+						<nav class="foottop__nav">
+							<li class="foottop__link">
+								<a href="#">Главная</a>
+							</li>
+							<li class="foottop__link">
+								<a href="#">Помощь</a>
+							</li>
+							<li class="foottop__link">	
+								<a href="#">Варианты инвестиций</a>
+							</li>
+						</nav>
+					</div>
+					<div class="mt-5 col-sm-6 mt-sm-0 col-xl-3">
+						<div class="foottop__title">
+							Личный кабинет
+						</div>
+						<nav class="foottop__nav">
+							<li class="foottop__link">
+								<a href="#">Войти в личный кабинет</a>
+							</li>
+							<li class="foottop__link">	
+								<a href="#">Зарегистрировать аккаунт</a>
+							</li>
+							<li class="foottop__link">	
+								<a href="#">Забыл пароль</a>
+							</li>
+						</nav>
+					</div>
+					<div class="col-12 col-xl-6 mt-5 mt-lg-0">
+						<div class="foottop__title">
+							О компании
+						</div>
+						<div class="foottop__text">
+							CashLion - молодая компания, открытая в 2018 году берущая свои корни из России. От своих конкурентов она отличается тем, что процент по доходам гораздо выше, а вывод средств сайта гораздо быстрее, и огромное количество отзывов от довольных клиентов доказывют это!
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footmiddle footer__footmiddle">
+				<div class="footmiddle__top">
+					<div class="row">
+						<div class="col-12 col-md-4 col-xl-3 footmiddle__left">
+							<a href="mailto:admin@cashlion.ru" target="_blank" class="soc-icon">
+								<i class="fa fa-envelope"></i>
+							</a>
+							admin@cashlion.ru
+						</div>
+						<div class="col-12 col-md-8 col-xl-9 footmiddle__right">
+							<span class="soc-icon">
+								<i class="fa fa-phone"></i>
+							</span>
+							Москва, Пресненская набережная 6, строение 2, офис 1016. (Москва-Сити, башня "Империя")
+						</div>
+					</div>
+				</div>
+				<div class="footmiddle__bottom">
+					<div class="row">
+						<div class="col-12 col-sm-6 footmiddle__left">
+							<a href="#" target="_blank" class="soc-icon">
+								<i class="fa fa-vk"></i>
+							</a>
+							<a href="#" target="_blank" class="soc-icon">
+								<i class="fa fa-facebook"></i>
+							</a>
+							<a href="#" target="_blank" class="soc-icon">
+								<i class="fa fa-twitter"></i>
+							</a>
+							<a href="#" target="_blank" class="soc-icon">
+								<i class="fa fa-odnoklassniki"></i>
+							</a>
+							<a href="#" target="_blank" class="soc-icon">
+								<i class="fa fa-instagram"></i>
+							</a>
+							Мы в социальных сетях
+						</div>
+						<div class="col-12 col-sm-6 footmiddle__right">
+							<a href="#" class="footmiddle__terms">
+								Пользовательское соглашение об условиях и порядке использования сайта
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footbottom footer__footbottom">
+				<div class="row">
+					<div class="col-12">
+						Все права защищены. Любое копирование и воспроизведение текста, в том числе частичное и в любых формах, без письменного разрешения правообладателей запрещено!
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</footer>
+	
+	<div class="hidden"></div>
+
+	<div class="loader">
+		<div class="loader_inner"></div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+	<![endif]-->
+	
+	<script src="./libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="./libs/bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
+	<script src="./libs/slick/slick.min.js"></script>
+	
+	<script src="./js/common.js"></script>
+	
+</body>
+</html>
